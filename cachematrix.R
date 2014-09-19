@@ -30,6 +30,6 @@ cacheSolve <- function(cachemat, ...) {
         }
         actualmat <- cachemat$get()
         inv <- solve(actualmat, ...)
-        cacheat$setinverse(inv)
+        cachemat$setinverse(inv)
         inv
 }
